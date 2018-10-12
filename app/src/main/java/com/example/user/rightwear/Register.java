@@ -34,6 +34,7 @@ public class Register extends AppCompatActivity {
                 String s3 =e3.getText().toString();
                 String s4=e1.getText().toString();
                 String s5=e1.getText().toString();
+		//If any of the required fields is empty
                 if(s1.equals("")||s2.equals("")||s4.equals("")||s5.equals("")){
                     Toast.makeText(getApplicationContext()," fields are empty",Toast.LENGTH_LONG).show();
 
