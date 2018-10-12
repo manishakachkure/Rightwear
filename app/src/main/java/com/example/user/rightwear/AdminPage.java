@@ -23,7 +23,7 @@ public class AdminPage extends AppCompatActivity {
         Cursor res=order1.getAllData();//res have some property
         if(res.getCount()==0)
         {
-            //message
+            //Errormessage
             showMessage("Error","No data to show");
             return;
         }

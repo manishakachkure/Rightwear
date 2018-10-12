@@ -10,7 +10,6 @@ import android.widget.ImageButton;
 public class Gallery extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

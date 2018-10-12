@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         b1=(Button)findViewById(R.id.button);
         b2=(Button)findViewById(R.id.register);
 
-        b1.setOnClickListener(new View.OnClickListener() {
+        //will operate when button b1 will be hit
+	b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email=e1.getText().toString().trim();
@@ -37,15 +38,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (email.contentEquals("Admin") && password.contentEquals("admin")){
                     Intent g=new Intent(MainActivity.this,AdminPage.class);
-
                     startActivity(g);
                 }
 
                 else{
                     Toast.makeText(getApplicationContext(),"Wrong email or password",Toast.LENGTH_LONG).show();
-
-
-
                 }
             }
         });
